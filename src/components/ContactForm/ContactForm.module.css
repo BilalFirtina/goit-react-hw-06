@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  width: 30%;
+  border-radius: 10px;
+  background-color: rgb(166, 232, 182);
+}
+.button {
+  margin-top: 20px;
+  width: 40%;
+  margin-bottom: 10px;
+  background-color: rgb(174, 237, 237);
+  border: 1px solid lightcyan;
+}
+input {
+  width: 80%;
+  height: 25px;
+}
+.form label:nth-of-type(2) {
+  margin-top: 20px;
+}
+.button:hover {
+  border: 1px solid rgb(94, 120, 120);
+  color: brown;
+}
+.error {
+  color: crimson;
+}
