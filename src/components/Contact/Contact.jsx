@@ -1,8 +1,14 @@
 import { IoPerson } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import style from "./Contact.module.css";
+import { useDispatch } from "react-redux";
+import { deleteContact } from "../../redux/contactsSlice";
 
-const Contact = ({ person, deletePerson }) => {
+const Contact = ({ person }) => {
+  const dispatch = useDispatch();
+  const deletePerson = (id) => {
+    dispatch(deleteContact(id));
+  };
   return (
     <div className={style.card}>
       <div className={style.personInfo}>

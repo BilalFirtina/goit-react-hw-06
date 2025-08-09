@@ -1,10 +1,7 @@
-.container {
+.listContainer {
   display: flex;
-  gap: 20px;
-  width: 100%;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-.list {
-  list-style: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 99%;
 }
