@@ -21,7 +21,9 @@ const Contact = ({ person }) => {
           {person.number}
         </span>
       </div>
-      <button onClick={() => deletePerson(person.id)}>Delete</button>
+      <button className={style.button} onClick={() => deletePerson(person.id)}>
+        Delete
+      </button>
     </div>
   );
 };

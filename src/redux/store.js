@@ -13,7 +13,7 @@ const rootReducer = combineReducers({
 
 // 2️⃣ Persist config
 const persistConfig = {
-  key: "root",
+  key: "localStorage",
   storage,
   whitelist: ["contacts", "filter"], // Kalıcı olacak reducer'lar
 };
@@ -26,7 +26,7 @@ export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false, // redux-persist için gerekli
+      serializableCheck: false,
     }),
 });
 
